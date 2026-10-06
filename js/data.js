@@ -2,7 +2,7 @@
 window.SITE = {
   name: "Bigyan Tamang",
   email: "bigyangyacho@gmail.com",            // e.g. "hello@yourdomain.com"
-  photo: "/Users/bigyantamang/Desktop/website/my-philosophical-world/js/me.jpg",            // e.g. "images/me.jpg" (leave empty for placeholder)
+  photo: "js/me.jpg",            // e.g. "images/me.jpg" (leave empty for placeholder)
   bio: "A student and content creator interested in understanding people, ideas, knowledge, society, and the human experience.",
   intro: ["A question begins here.", "Why do we think the way we think?"],
   floaters: ["Who am I?","What do I know?","Why do I believe?","What makes a life meaningful?","Can we know ourselves?","What is freedom?"],
