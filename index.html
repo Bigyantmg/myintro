@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Bigyan Tamang — Philosophy, Psychology, Education &amp; Human Life</title>
+<meta name="description" content="A student and content creator exploring philosophy, psychology, education, and the questions that shape human life.">
+<link rel="canonical" href="https://example.com/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Your Name — Exploring the questions that make us human">
+<meta property="og:description" content="A student and content creator exploring philosophy, psychology, education, and the questions that shape human life.">
+<meta property="og:url" content="https://example.com/">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Your Name — Exploring the questions that make us human">
+<meta name="twitter:description" content="Philosophy, psychology, education and life.">
+<meta name="theme-color" content="#0d0c0b">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='%230d0c0b'/%3E%3Ctext x='32' y='46' font-size='44' text-anchor='middle' fill='%23b4572f' font-family='Georgia'%3E%3F%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Manrope:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="css/styles.css">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","name":"Your Name","url":"https://example.com/","description":"A student and content creator exploring philosophy, psychology, education, and the questions that shape human life."}</script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<div id="intro" role="dialog" aria-label="Introduction"><p id="introText" aria-live="polite"></p><button id="skipIntro" type="button">Skip intro</button></div>
+<div id="progress" aria-hidden="true"></div>
+<div id="cursor" aria-hidden="true"><span></span></div>
+<div class="grain" aria-hidden="true"></div>
+
+<header class="nav">
+  <a href="#top" class="brand" id="brand">Your Name</a>
+  <button class="burger" id="burger" aria-expanded="false" aria-controls="menu" aria-label="Open menu"><i></i><i></i></button>
+  <nav id="menu" aria-label="Main">
+    <a href="#about">About</a><a href="#worlds">Worlds</a><a href="#wall">Questions</a><a href="#content">Content</a><a href="#library">Library</a><a href="#journal">Journal</a><a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<main id="main">
+<section id="top" class="hero dark">
+  <div class="stage" aria-hidden="true">
+    <svg viewBox="0 0 800 800" preserveAspectRatio="xMidYMid slice">
+      <defs><radialGradient id="g" cx="50%" cy="40%"><stop offset="0" stop-color="#d98a5f"/><stop offset=".5" stop-color="#8a3f20"/><stop offset="1" stop-color="#1a0f0a"/></radialGradient></defs>
+      <g class="orbits" fill="none" stroke="#b08d57" stroke-opacity=".28"><ellipse cx="400" cy="330" rx="260" ry="80"/><ellipse cx="400" cy="330" rx="200" ry="150" transform="rotate(30 400 330)"/><circle cx="400" cy="330" r="310" stroke-opacity=".12"/></g>
+      <circle class="orb" cx="400" cy="250" r="62" fill="url(#g)"/>
+      <path fill="#050505" d="M400 330c-34 0-52 26-52 58 0 20 6 34 6 52-22 8-60 30-70 120l-8 240h248l-8-240c-10-90-48-112-70-120 0-18 6-32 6-52 0-32-18-58-52-58z"/>
+    </svg>
+    <div id="floaters"></div>
+  </div>
+  <div class="wrap hero-copy">
+    <h1>Exploring the questions that make us <em>human.</em></h1>
+    <p class="lead">Philosophy. Psychology. Education. Life.<br>An ongoing exploration of the ideas behind the way we think, learn, live, and understand ourselves.</p>
+    <div class="btns"><a class="btn solid" href="#question" data-cur="ENTER">Enter the journey</a><a class="btn" href="#content" data-cur="VIEW">Explore my work</a></div>
+  </div>
+  <p class="scroll">Scroll to question everything ↓</p>
+</section>
+
+<section id="question" class="full dark black">
+  <blockquote class="rv big">“We spend our lives searching for answers.<br>But perhaps the quality of our life depends on the questions we ask.”</blockquote>
+  <p class="rv small">This is where my journey begins.</p>
+</section>
+
+<section id="about" class="pad">
+  <div class="wrap two">
+    <div class="rv portrait" id="portrait"></div>
+    <div class="rv">
+      <h2>Who is behind the questions?</h2>
+      <p id="bio"></p>
+      <p>I use philosophy, psychology, education, books, stories, research, and everyday experiences as tools for understanding life. I am learning in public — not someone who has mastered everything.</p>
+      <blockquote class="pull">“I am not building this space because I have all the answers. I am building it because I believe there are better questions worth asking.”</blockquote>
+    </div>
+  </div>
+</section>
+
+<section id="worlds" class="pad paper">
+  <div class="wrap"><h2 class="rv">The worlds I explore.</h2>
+  <div class="worlds"><div class="tabs" role="tablist" aria-label="Worlds" id="tabs"></div><div class="panel" id="panel" role="tabpanel" aria-live="polite"></div></div></div>
+</section>
+
+<section id="wall" class="pad dark">
+  <div class="wrap"><h2 class="rv">Questions I keep returning to.</h2><ul class="wall" id="wallList"></ul></div>
+</section>
+
+<section id="content" class="pad">
+  <div class="wrap"><h2 class="rv">Ideas made for real life.</h2>
+  <p class="rv intro">“I take ideas from philosophy, psychology, education, books, stories, and everyday experiences—and turn them into accessible conversations.”</p>
+  <div class="featured" id="featured"></div>
+  <div class="chips" id="chips" role="group" aria-label="Filter by category"></div>
+  <div class="cards" id="cards"></div></div>
+</section>
+
+<section id="library" class="pad paper">
+  <div class="wrap"><h2 class="rv">The Library</h2><p class="rv intro">The thinkers and subjects I explore. Being listed here means an influence or a curiosity, not mastery.</p><div id="shelves"></div></div>
+</section>
+
+<section id="journal" class="pad dark">
+  <div class="wrap"><h2 class="rv">Notes from the journey.</h2><div class="cards" id="posts"></div></div>
+</section>
+
+<section id="journey" class="pad">
+  <div class="wrap"><h2 class="rv">Still becoming.</h2><ol class="timeline" id="timeline"></ol></div>
+</section>
+
+<section id="social" class="pad paper">
+  <div class="wrap"><h2 class="rv">The conversation continues.</h2><p class="rv intro">“The website is only one place where the ideas live.”</p><div class="social" id="socials"></div></div>
+</section>
+
+<section id="stay" class="pad">
+  <div class="wrap narrow"><h2 class="rv">Stay curious.</h2><p class="rv intro">“Occasionally, I want to share an idea worth thinking about—not another notification worth ignoring.”</p>
+  <form class="line-form" data-msg="Newsletter isn't connected yet. Add an email service (see README) to enable sign-ups.">
+    <label for="nl">Email address</label><input id="nl" type="email" required autocomplete="email" placeholder="you@example.com"><button class="btn solid" type="submit">Notify me</button><p class="note" role="status"></p></form></div>
+</section>
+
+<section id="contact" class="pad paper">
+  <div class="wrap two"><div><h2 class="rv">Let's talk about ideas.</h2><p class="rv intro">“If you have a question, idea, collaboration, or simply something worth discussing, I'd like to hear it.”</p><p><a id="emailLink" href="#">your@email.com</a></p></div>
+  <form class="line-form" data-msg="This form is a placeholder. Use the email link until a form service is connected.">
+    <label for="cn">Name</label><input id="cn" required autocomplete="name"><label for="ce">Email</label><input id="ce" type="email" required autocomplete="email"><label for="cm">Message</label><textarea id="cm" rows="4" required></textarea><button class="btn solid" type="submit">Send message</button><p class="note" role="status"></p></form></div>
+</section>
+
+<section id="end" class="full dark black">
+  <blockquote class="rv big">“Perhaps the purpose of thinking is not to escape life, but to understand it better.”</blockquote>
+  <p class="rv small">Keep questioning.</p>
+  <a class="btn" href="#top" data-cur="TOP">Return to the beginning ↑</a>
+</section>
+</main>
+<footer><p>© <span id="yr"></span> <span id="fname">Your Name</span>. Exploring the questions that make us human.</p></footer>
+
+<dialog id="post"><button class="close" id="closePost" aria-label="Close article">×</button><article id="postBody"></article></dialog>
+<script src="js/data.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
